@@ -1,2 +1,1 @@
-python-telegram-bot==20.7
-python-telegram-bot-raw==20.7
+python-telegram-bot
