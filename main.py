@@ -6,6 +6,8 @@ from telegram.ext import Application, CommandHandler, CallbackQueryHandler, Cont
 import csv
 import os
 from datetime import datetime
+import os
+TOKEN = os.environ.get('TOKEN')
 
 # تنظیمات لاگ
 logging.basicConfig(
@@ -310,7 +312,7 @@ def main():
     sync_movies_to_db()
     
     # توکن بات
-    TOKEN = "xxxxxxx:xxxxxxxxxxxxxxxxxxxxxxxxxxx" # توکن ربات خود را اینجا وارد کنید
+    # TOKEN = "xxxxxxx:xxxxxxxxxxxxxxxxxxxxxxxxxxx" # توکن ربات خود را اینجا وارد کنید
     
     application = Application.builder().token(TOKEN).build()
     
